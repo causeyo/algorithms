@@ -13,11 +13,14 @@ def permute(text):
         for i, let in enumerate(text):
 
             # for every permutation resulting from step2 and step3
-            for perm in permute(text[:1] + text[i+1:]):
+            for perm in permute(text[:i] + text[i+1:]):
 
                 # add it to the output
+                print(f"current letter is {let}")
+                print(f"current perm is {perm}")
                 out += [let+perm]
 
     return out
+
 
 print(permute("abc"))
