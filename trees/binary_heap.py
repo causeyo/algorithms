@@ -57,3 +57,20 @@ class BinHeap:
             self.percDown(i)
             i = i -1
 
+# EXAMPLE
+
+a = BinHeap()
+a.insert(11)
+print(a.heapList)
+a.insert(10)
+print(a.heapList)
+a.insert(9)
+print(a.heapList)
+a.insert(7)
+print(a.heapList)
+a.insert(8)
+print(a.heapList)
+a.insert(6)
+print(a.heapList)
+a.insert(8)
+print(a.heapList)
