@@ -8,6 +8,12 @@ class TreeNode:
         self.rightChild = right
         self.parent = parent
 
+    def getLeftChild(self):
+        return self.leftChild
+
+    def getRightChild(self):
+        return self.rightChild
+
     def hasLeftChild(self):
         return self.leftChild
 
@@ -206,7 +212,7 @@ class BinarySearchTree:
                                                 currentNode.rightChild.rightChild)
 
 
-
+'''
 mytree = BinarySearchTree()
 mytree[3]="red"
 mytree[4]="blue"
@@ -215,4 +221,4 @@ mytree[2]="at"
 
 print(mytree[6])
 print(mytree[2])
-
+'''
